@@ -1,0 +1,72 @@
+body, html {
+  height: 100%;
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.bg-image {
+  height: 50%; 
+  
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.img1 { background-image: url("https://images.pexels.com/photos/1172253/pexels-photo-1172253.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500.jpg"); }
+.img2 { background-image: url("https://cdn.pixabay.com/photo/2015/03/09/18/34/beach-666122__480.jpg"); }
+.img3 { background-image: url("https://www.grandpalaceyercaud.com/wp-content/uploads/2018/02/DSC_0984-1024x384.jpg"); }
+.img4 { background-image: url("https://www.cvent.com/sites/default/files/image/2021-10/hotel%20room%20with%20beachfront%20view.jpg"); }
+.img5 { background-image: url("https://cdn.jumeirah.com/-/mediadh/dh/hospitality/jumeirah/article/activities/dubai/madinat-jumeirah-watersports_landscape.jpg?h=1080&w=1920.jpg"); }
+.img6 { background-image: url("https://res.cloudinary.com/simplotel/image/upload/w_5000,h_3333/x_0,y_387,w_5000,h_2813,r_0,c_crop,q_80,fl_progressive/w_400,f_auto,c_fit/ananta-spa-resorts-pushkar/AQ0A8069_eq6zhc.jpg"); }
+.img7 { background-image: url("https://res.cloudinary.com/simplotel/image/upload/x_0,y_66,w_1280,h_721,r_0,c_crop,q_80,fl_progressive/w_960,f_auto,c_fit/gk-hill-view-resort/buffet-315691_1280_mid6lt.jpg");}
+.img8 { background-image: url("https://smedia2.intoday.in/indiatoday/images/stories/2015July/nature-zone-resort,-munnarmos_071315063158.jpg");}
+
+
+.bg-text {
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0, 0.4); /* Black w/opacity/see-through */
+  color: white;
+  font-weight: bold;
+  font-size: 80px;
+  border: 10px solid #f1f1f1;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  width: 360px;
+  padding: 25px;
+  text-align: center;
+}
+
+.goback {
+    overflow: hidden;
+    background-color:#333;
+  }
+  
+  
+  .goback a {
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+  
+  .goback a:hover {
+    background-color:  lightgreen;
+    color: black;
+    background-color: lightgreen;
+  }
+    
+h4{
+  text-align: center;
+}
+h3{
+   text-align: center;
+}

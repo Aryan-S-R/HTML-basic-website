@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="index.CSS">
+        </head>
+        <body>
+          <div class="topnav">
+            <a href="/E:/Basic web site designing/index.html">Home</a>
+            <a href="/E:/Basic web site designing/menu.html">Menu</a>
+            <a href="/E:/Basic web site designing/index1.html">Gallery</a>
+            <a href="/E:/Basic web site designing/menu.html">Contact</a>
+            <a href="#about">Location</a> 
+            <a href="/E:/Basic web site designing/restaurent.html">Restaurent</a>
+          </div>
+        <div class="bg-img">
+          <div class="hero-image">
+            <div class="hero-text">
+              <h1 style="font-size:50px">Hello everyone!</h1>
+              <marquee behavior="scroll" direction="left" scrollamount="6">! Welcome to <strong>SUBWAY</strong> Resort !</marquee>
+              <marquee behavior="scroll" direction="right" scrollamount="6"> Enjoy your ! Happy Life ! </marquee>
+
+            </div>
+          </div>
+        </div><hr>
+        <h1 style="color: green;"><strong><u>How precious is Food?</u></strong></h1>
+        <h2>"Our food is shipped all around the globe before it arrives at its final destination.
+           We can eat the food we want in the quantity we like all year round." But do you know who is producing, with sustainable values, in your region?
+            Every day our civilization increases its records of production, but also its wasting. While we produce too much, the third world has a food insufficiency. 
+            Each culture has its own food habits, resources and usages. For these reasons we do not manage food in the same way. In this context history plays an important
+             role because it explains these food habits and uses in culture. The globalisation of food management world wide has created enormous gaps between the energy.</h2>
+        <h3 style="color: green;"> Nature Images From <strong>Subway Resort ...!</strong></h3><hr>
+        <div class="container">
+          <div class="mySlides">
+            <div class="numbertext">1 / 6</div>
+            <img src="https://www.w3schools.com/howto/img_nature_wide.jpg" style="width:100%">
+          </div>
+        
+          <div class="mySlides">
+            <div class="numbertext">2 / 6</div>
+            <img src="https://www.w3schools.com/howto/img_woods_wide.jpg" style="width:100%">
+          </div>
+        
+          <div class="mySlides">
+            <div class="numbertext">3 / 6</div>
+            <img src="https://www.w3schools.com/howto/img_lights_wide.jpg" style="width:100%">
+          </div>
+            
+          <div class="mySlides">
+            <div class="numbertext">4 / 6</div>
+            <img src="https://www.w3schools.com/howto/img_mountains_wide.jpg" style="width:100%">
+          </div>
+        
+          <div class="mySlides">
+            <div class="numbertext">5 / 6</div>
+            <img src="https://www.w3schools.com/howto/img_5terre_wide.jpg" style="width:100%">
+          </div>
+            
+          <div class="mySlides">
+            <div class="numbertext">6 / 6</div>
+            <img src="" style="width:100%">
+          </div>
+            
+          <a class="prev" onclick="plusSlides(-1)">❮</a>
+          <a class="next" onclick="plusSlides(1)">❯</a>
+        
+          <div class="caption-container">
+            <p id="caption"></p>
+          </div>
+        </div>
+        <script>
+          let slideIndex = 1;
+          showSlides(slideIndex);
+          
+          function plusSlides(n) {
+            showSlides(slideIndex += n);
+          }
+          
+          function currentSlide(n) {
+            showSlides(slideIndex = n);
+          }
+          
+          function showSlides(n) {
+            let i;
+            let slides = document.getElementsByClassName("mySlides");
+            let dots = document.getElementsByClassName("demo");
+            let captionText = document.getElementById("caption");
+            if (n > slides.length) {slideIndex = 1}
+            if (n < 1) {slideIndex = slides.length}
+            for (i = 0; i < slides.length; i++) {
+              slides[i].style.display = "none";
+            }
+            for (i = 0; i < dots.length; i++) {
+              dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex-1].style.display = "block";
+            dots[slideIndex-1].className += " active";
+            captionText.innerHTML = dots[slideIndex-1].alt;
+          }
+          </script>
+           
+    </body>
+    </html>
